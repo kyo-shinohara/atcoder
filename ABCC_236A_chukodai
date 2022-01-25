@@ -1,0 +1,13 @@
+<?php
+fscanf(STDIN,"%s",$s);
+fscanf(STDIN,"%d %d",$a,$b);
+$as = $a-1;
+$bs = $b-1;
+ 
+$sa = $s[$as];
+$sb = $s[$bs];
+ 
+$s[$bs] = $sa;
+$s[$as] = $sb;
+echo $s ;
+?>
